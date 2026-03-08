@@ -743,7 +743,7 @@ h3.my-profession {
   width: 120px;
   height: 20%;
   left: 14%;
-  bottom: 4%;
+  bottom: -3%;
   border-bottom: 6px solid var(--skin-color);
   border-left: 6px solid var(--skin-color);
 }
@@ -751,7 +751,7 @@ h3.my-profession {
   width: 120px;
   height: 20%;
   right: 15%;
-  top: 50%;
+  top: 60%;
   border-top: 6px solid var(--skin-color);
   border-right: 6px solid var(--skin-color);
 }
