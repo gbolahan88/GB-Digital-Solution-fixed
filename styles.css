@@ -239,6 +239,11 @@ h3.my-profession {
   max-width: 100%;
   height: auto;
 }
+.hero-image {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
 
 /* About */
 .about-container {
@@ -636,7 +641,7 @@ h3.my-profession {
 
 
 /* Mobile phones */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 .aside {
   display: flex;
   flex-direction: row;
@@ -721,47 +726,42 @@ h3.my-profession {
   font-size: 15px;
   margin-bottom: 40px;
 }
-  .home-img{
-    position: absolute;
-    display: inline-block;
-    margin: 0 auto;
-  }
-  .home-img img{
-    margin-top: 140%;
-    margin-left: 25%;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-    z-index: 2;
-  }
-  .home-img::after,
-  .home-img::before{
-    content: '';
-    position: absolute;
-    box-sizing: border-box;
-    pointer-events: none;
-    z-index: 1;
-  }
-  .home-img::after{
-    width: 120px;
-    height: 20%;
-    left: 20%;
-    bottom: -4%;
-    border-bottom: 6px solid var(--skin-color);
-    border-left: 6px solid var(--skin-color);
-  }
-  .home-img::before{
-    width: 120px;
-    height: 20%;
-    right: 20%;
-    top: 64%;
-    border-top: 6px solid var(--skin-color);
-    border-right: 6px solid var(--skin-color);
-  }
+.home-img img{
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.home-img::after,
+.home-img::before{
+  content: '';
+  position: absolute;
+  align-items: center;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 1111;
+}
+.home-img::after{
+  width: 120px;
+  height: 20%;
+  left: 14%;
+  bottom: 4%;
+  border-bottom: 6px solid var(--skin-color);
+  border-left: 6px solid var(--skin-color);
+}
+.home-img::before{
+  width: 120px;
+  height: 20%;
+  right: 15%;
+  top: 50%;
+  border-top: 6px solid var(--skin-color);
+  border-right: 6px solid var(--skin-color);
+}
+.hero-image {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
 
-  /* About */
+/* About */
 .about-content {
   display: flex;
   flex-direction: column;
@@ -776,7 +776,7 @@ h3.my-profession {
   font-size: 19px;
 }
 .about-text p {
-  font-size: 10px;
+  font-size: 15px;
   line-height: 25px;
   color: var(--text-black-700);
   margin-bottom: 20px;
@@ -785,11 +785,12 @@ h3.my-profession {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5px;
+  gap: 2rem;
+  margin-left: 10px;
 }
 .buttons .btn {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 15px;
 }
 .personal-info {
   flex: 0 0 100%;
